@@ -1,0 +1,65 @@
+.question,
+.editQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.question > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.question > div > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+.question > div > p,
+.leftContainer > div > p {
+  margin: 0;
+}
+
+.discipline {
+  padding: 10px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+
+.type {
+  color: #ed6c02;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.leftContainer > div {
+  display: flex;
+  gap: 10px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.options > span {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.disabled {
+  border-color: red;
+}

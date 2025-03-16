@@ -41,6 +41,12 @@ export class AuthService {
       role: 'admin',
     });
 
+    // const accessToken = this.jwtService.sign({
+    //   id: '80bc09ab-d789-41f9-89a6-b64c2d49cd75',
+    //   email: 'admin@dump.hr',
+    //   role: 'admin',
+    // });
+
     return accessToken;
   }
 }

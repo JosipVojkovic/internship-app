@@ -16,16 +16,16 @@ export class EmailController {
     private readonly loggerService: LoggerService,
   ) {}
 
-  @UseGuards(JwtAuthGuard)
-  @Post('send')
-  async sendEmails(@Body() { emails, text, subject }: EmailsSendDto) {
-    await this.loggerService.createAdminLog(
-      AdminLogAction.Email,
-      `Poslan mail ${emails.join(',')} naziva ${subject}`,
-    );
+  // @UseGuards(JwtAuthGuard)
+  // @Post('send')
+  // async sendEmails(@Body() { emails, text, subject }: EmailsSendDto) {
+  //   await this.loggerService.createAdminLog(
+  //     AdminLogAction.Email,
+  //     `Poslan mail ${emails.join(',')} naziva ${subject}`,
+  //   );
 
-    return await this.emailService.sendEmail(emails, text, subject);
-  }
+  //   return await this.emailService.sendEmail(emails, text, subject);
+  // }
 
   @UseGuards(JwtAuthGuard)
   @Post()

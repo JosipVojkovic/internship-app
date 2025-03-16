@@ -19,5 +19,10 @@ export enum Path {
   AdminLogs = '/admin/admin-logs',
   Counter = '/admin/counter',
 
+  //Dodani pathovi
+  InterviewBuilder = '/admin/interview-builder',
+
+  InterviewQuestionStats = '/admin/interview-builder/:questionId',
+  //
   CatchAll = '/:path*',
 }

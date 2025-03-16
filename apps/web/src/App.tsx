@@ -26,6 +26,8 @@ import TestOverviewPage from './pages/TestOverviewPage';
 import TestPage from './pages/TestPage';
 import TestReviewPage from './pages/TestReviewPage';
 import TestSchedulerPage from './pages/TestSchedulerPage';
+import InterviewBuilderPage from './pages/InterviewBuilderPage';
+import InterviewQuestionStatsPage from './pages/InterviewQuestionStatsPage';
 
 const queryClient = new QueryClient();
 
@@ -59,6 +61,19 @@ export const App = () => {
             <Route path={Path.Interviewers} component={InterviewersPage} />
             <Route path={Path.AdminLogs} component={AdminLogsPage} />
             <Route path={Path.Counter} component={CounterPage} />
+
+            {/* Moje rute */}
+            <Route
+              path={Path.InterviewBuilder}
+              component={InterviewBuilderPage}
+            />
+
+            <Route
+              path={Path.InterviewQuestionStats}
+              component={InterviewQuestionStatsPage}
+            />
+            {/* */}
+
             <Route path={Path.CatchAll} component={NotFoundPage} />
           </Switch>
           <Toaster />
